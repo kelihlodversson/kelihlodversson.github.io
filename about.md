@@ -4,12 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+This is the website of Keli Hlodversson, programmer, composer and general tinkerer.
+My plan is to post some of my musings in the world of art, game development, hacking obsolete hardware.
 
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+I might even post a song or two.
