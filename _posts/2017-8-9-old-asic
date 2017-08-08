@@ -1,0 +1,36 @@
+---
+layout: post
+title: Playing around with old ASIC designs
+---
+
+(/images/GAMECART.png "Inside the STE GLUE/MMC chip")
+
+As an old Atari ST owner, I have always been very interested in various retro
+projects involving that old machine. I've spent hours playing around with emulators,
+reading about various clones and reimplementations, and even gotten more or
+less tangentially involved in some open source software projects related to the platform.
+
+I got very excited when I discovered that a some of the custom ASIC designs
+created by had been [uncovered and even converted to PDF files by Christian Zietz.](https://www.chzsoft.de/asic-web/)
+
+I immediately downloaded the repositories and almost forgot about them for a while,
+but recently I decided to have a look at one of the designs and to see what information
+I could extract from them.
+
+Since I had recently had a discussion with [Chris Swinson](https://exxosnews.blogspot.dk/)
+about the MMU on the original Atari ST and whether it could be convinced to support more than
+the maximum 4MB of RAM.
+
+Based on an old design posted on [Atarihacks](http://atari4ever.free.fr/hardware/zip/16mbram.zip),
+it seems to be possible to hack in support for the extra DRAM address signal using discreet logic
+connected to address pins 23 and 22 on the CPU, it seems to be almost possible.
+(Baring some timing issues with the current design. According to the original author
+they never got it working reliably.)
+
+But the it's not quite as simple as that. There is other hardware that needs to access the RAM as well.
+The DMA and the Shifter for instance do, but the way it happens is different from how the CPU does it.
+The MMU has internal registers for managing the current address for the video buffer sent to the Shifter,
+and another set of register for DMA transfers, and since they are internal to the MMU, there is no way
+to add the missing two bits of address to them without replacing the MMU with a new implementation.
+
+And this is when I remembered the ASIC designs.
