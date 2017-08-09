@@ -24,7 +24,7 @@ Although from the discussion, people who have tried building it never actually g
 
 But it's not quite as simple as that. The CPU isn't the only hardware that needs to access the DRAM.
 The Blitter does too and seems to have the necessary address pins to address the full address space.
-The DMA and the Shifter however, don't generate any address signals at all.
+However, the DMA and the Shifter don't generate any address signals at all.
 MMU has internal registers for managing the current address for the video buffer sent to the Shifter,
 and another set of register for DMA transfers, and since they are internal to the MMU, there is no way
 to add the missing two bits of address to them without replacing the MMU with a new implementation.
@@ -68,7 +68,7 @@ map to 0xE80000 to 0xEBFFFF and 0xE40000 to 0xE7FFFF respectively. This allows
 the STE to potentially address 768 kilobytes of ROM in total, if these pins were made available.
 
 Before talking about the cartridge ROM pins, /ROM3 and /ROM4, I took a look at
-the new /ROM5 and /ROM6 pins. I traced these to map to map to two different halves
+the new /ROM5 and /ROM6 pins. I traced these to map to two different halves
 of a 512 kilobyte address area from 0xD00000 to  0xD7FFFF. (With the lower numbered pin mapping to the upper half as in the other cases.)
 Searching the web, it seems that by probing the address space of the STE,
 [this was already known](http://info-coach.fr/atari/hardware/STE-HW.php), but I haven't yet found any explanation why these pins were added.
