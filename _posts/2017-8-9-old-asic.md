@@ -88,10 +88,10 @@ game cartridge on the STe, or did they plan to release a game console based on t
 
 How is that GAMECART signal created? I traced it back to the section
 in the image at the top of this article on page 10 of the schematics.
-The signal comes from a flip flop, that is set by writing to bit 8 on 0xF90000.
+The signal comes from a flip flop, that is set by writing to bit 8 on 0xFF9000.
 
 I don't own an STE, but it would be interesting to see if someone could do a quick test
-to see what happens by writing 256 to address 0xF90000. Does it relocate any connected
+to see what happens by writing byte 1 to address 0xFF9000. Does it relocate any connected
 cartridge to 0xD80000?
 
 ## Final thoughts
@@ -111,3 +111,10 @@ I might still end up creating a SUPER-MMU implementation in a CPLD. But there is
 a long way still. And it'll require me to play around with actual hardware, which is not my strong point yet.
 And any decent CPLD or FPGA with enough pins come in awesomely hard to solder packages. I better practice my
 soldering skills some more. :)
+
+## Update
+
+Literarily minutes after [sharing this article](https://www.facebook.com/groups/133161394213/permalink/10155663972899214/)
+on the [Atari ST and STe users Facebook group](https://www.facebook.com/groups/133161394213/),
+Troed Sångberg pointed out [this thread on atari-forum.com](http://atari-forum.com/viewtopic.php?f=15&t=32054)
+discussing the very same internal GAMECART register and implications.
