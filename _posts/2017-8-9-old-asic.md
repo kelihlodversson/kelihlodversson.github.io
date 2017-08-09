@@ -117,4 +117,4 @@ soldering skills some more. :)
 Literarily minutes after [sharing this article](https://www.facebook.com/groups/133161394213/permalink/10155663972899214/)
 on the [Atari ST and STe users Facebook group](https://www.facebook.com/groups/133161394213/),
 Troed Sångberg pointed out [this thread on atari-forum.com](http://atari-forum.com/viewtopic.php?f=15&t=32054)
-discussing the very same internal GAMECART register and implications.
+posted by Christian Zietz himself, discussing the very same internal GAMECART register and implications.
