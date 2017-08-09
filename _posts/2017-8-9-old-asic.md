@@ -104,8 +104,8 @@ But after all this I might not need to decode the entire design. Chris Swinson r
 FPGA implementations of the ST available. The Suska project even was developed
 by [replacing the hardware on a real ST motherboard](https://www.experiment-s.de/en/gallery/) piece by piece and seems to be fairly accurate.
 
-Doing detective work like this may be useful for projects like these and even emulators, as seen above,
-can uncover hitherto unknown hardware features and bugs allowing for more accurate emulation of the original systems.
+Performing this kind of detective work may be useful for projects like these and even emulators. As seen above,
+it can uncover hitherto unknown hardware features and bugs, allowing for more accurate emulation of the original systems.
 
 I might still end up creating a SUPER-MMU implementation in a CPLD. But there is
 a long way still. And it'll require me to play around with actual hardware, which is not my strong point yet.
