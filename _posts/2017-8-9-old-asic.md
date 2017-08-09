@@ -20,11 +20,11 @@ I downloaded the repositories, read through them and then almost immediately for
 Recently, I took part in a [discussion on the Atari ST and STe Users facebook group](https://www.facebook.com/groups/133161394213/permalink/10155613110164214/).
 [Chris Swinson](https://exxosnews.blogspot.dk/) shared an old design posted on [Atarihacks](http://atari4ever.free.fr/hardware/zip/16mbram.zip),
 that seems to hack in support for addressing more than the maximum 4MB of RAM possible by generating the missing DRAM signals from pins 23 and 22 on the CPU.
-It seems to be almost possible, baring timing issues with the design, alas from the discussion, people who have tried building it never actually got it working.
+Although from the discussion, people who have tried building it never actually got it working, but it seems to be almost possible, baring timing issues with the design.
 
 But it's not quite as simple as that. The CPU isn't the only hardware that needs to access the DRAM.
-The Blitter does too and seems to have the necessary address pins to address the full address space,
-but the DMA and the Shifter don't generate any address signal at all.
+The Blitter does too and seems to have the necessary address pins to address the full address space.
+The DMA and the Shifter however, don't generate any address signals at all.
 MMU has internal registers for managing the current address for the video buffer sent to the Shifter,
 and another set of register for DMA transfers, and since they are internal to the MMU, there is no way
 to add the missing two bits of address to them without replacing the MMU with a new implementation.
