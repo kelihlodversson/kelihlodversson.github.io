@@ -217,7 +217,7 @@ back into my source image.
 ![blitlife.prg](/images/blitlife.png "BLITLIFE.PRG running in low res")
 
 And that's basically it. I have created a simple (and ugly) GEM application that wraps my
-blitter algorithm. It hard codes three images and opens then in their own windows.
+blitter algorithm. It hard codes three images and opens each in their own window.
 Closing all windows will exit the application. If you want to experiment with other
 patterns, you will have to modify them in the source and recompile the application.
 Also note that you need an ST with a blitter chip. The code does not test for it and
