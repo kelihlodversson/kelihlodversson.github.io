@@ -30,6 +30,29 @@ body {
   width: 100%;
 }
 
+.float {
+    float:left;
+    margin-right: 15px;
+}
+
+table {
+    background: $black;
+}
+
+td {
+    background: $white;
+}
+
+th {
+    background: #eee;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid $darkerGray;
+    padding: 2px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
@@ -257,7 +280,7 @@ nav {
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
     color: $gray;
-    font-size: 22px;
+    font-size: 95%;
     font-style: italic;
   }
 
