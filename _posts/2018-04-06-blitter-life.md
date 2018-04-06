@@ -217,7 +217,7 @@ back into my source image.
 
 And that's basically it. I have created a simple (and ugly) GEM application that wraps my
 blitter algorithm. It hard codes three images and opens then in their own windows.
-Closing both windows will exit the application. If you want to experiment with other
+Closing all windows will exit the application. If you want to experiment with other
 patterns, you will have to modify them in the source and recompile the application.
 Also note that you need an ST with a blitter chip. The code does not test for it and
 will most probably bomb out if you try to run on a machin without... It may even bomb
