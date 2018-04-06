@@ -22,7 +22,7 @@ the Blitter works. I recommend taking a look at Paranoid's FAQ and [Atari's offi
 docs](https://www.dev-docs.org/docs/htm/search.php?find=Atari%20ST%20Bit-Block) if you need a brush-up.*
 
 Lookup tables means we can approximate some (very rudimentary) calculations.
-Could something like Game of Life could be implemented using the BLiTTER?
+Could something like Game of Life be implemented using the BLiTTER?
 
 The rules are simple. The [Wikipedia article on Conway's Game of Life](https://en.wikipedia.org/wiki/Conway's_Game_of_Life) describes them as thus:
 
