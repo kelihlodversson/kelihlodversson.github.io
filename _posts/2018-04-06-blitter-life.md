@@ -1,5 +1,6 @@
 ---
 layout: post
+image: /images/blitlife.png
 title: Conway's game of life on the BLiTTER
 ---
 
