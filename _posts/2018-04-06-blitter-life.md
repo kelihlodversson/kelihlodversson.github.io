@@ -5,7 +5,7 @@ title: Conway's game of life on the BLiTTER
 ---
 
 ![Gosper Glider Gun](/images/life_in_a_window.png "Gosper Glider Gun running in a GEM window"){: .float}
-Since I've got a Atari Mega 4, I've been reading up on the Atari ST Blitter and
+Since I've got an Atari Mega 4, I've been reading up on the Atari ST Blitter and
 what to do with it. Apart from being excellent at copying bitmaps around, it
 does have a few cool tricks up its sleeve.
 
@@ -71,7 +71,7 @@ Let's consider a pixel array like this:
 
 |a0|a1|a2|a3|...|
 |b0|b1|b2|b3|...|
-|c0|b1|c2|c3|...|
+|c0|c1|c2|c3|...|
 |...|...|...|...|...|
 
 Pixels b1 and b2 have pixels a0, a1, a2, and a3 as their combined upper neighbors (sharing a1 and a2.)
