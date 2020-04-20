@@ -11,7 +11,7 @@ does have a few cool tricks up its sleeve.
 
 Inspired by [Paranoid's BLiTTER FAQ](http://paradox.atari.org/files/BLIT_FAQ.TXT),
 I learned that you can do cool things with the halftone pattern registers and the
-smudge mode of the blitter.
+smudge mode of the blitter.<!--break-->
 Enabling smudge mode basically turns the halftone pattern into a 16 entry
 lookup table. Paranoid uses that to implement saturated increments and chunky
 to planar conversions (albeit slightly slower than the fastest m68k solution
