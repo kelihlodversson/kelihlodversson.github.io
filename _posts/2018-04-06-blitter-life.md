@@ -9,9 +9,11 @@ Since I've got an Atari Mega 4, I've been reading up on the Atari ST Blitter and
 what to do with it. Apart from being excellent at copying bitmaps around, it
 does have a few cool tricks up its sleeve.
 
+<!--break-->
+
 Inspired by [Paranoid's BLiTTER FAQ](http://paradox.atari.org/files/BLIT_FAQ.TXT),
 I learned that you can do cool things with the halftone pattern registers and the
-smudge mode of the blitter.<!--break-->
+smudge mode of the blitter.
 Enabling smudge mode basically turns the halftone pattern into a 16 entry
 lookup table. Paranoid uses that to implement saturated increments and chunky
 to planar conversions (albeit slightly slower than the fastest m68k solution
