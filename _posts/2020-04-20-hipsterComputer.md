@@ -9,6 +9,8 @@ Differences are important. We need to listen to more than just echoes, or watch 
 
 ## Differences in computing
 In the 80's and to some degree the 90's the home computer revolution brought us myriads of computing platforms, each with their own slightly different variations on what home computing should be (or become).
+
+
 These experiments evolved and non-viable ones died off or got replaced with new species. This could be considered the pre-agrarian period of home computing; there was a great variety to be foraged in the forest of early home computer manufacturers.
 Then some of the platforms became big and began displacing the small platforms. With the exception of a few outliers, in the effort of outcompeting the others, a monoculture of farmed, beige PCs became the norm.
 In nature, monocultures are vulnerable. We need biodiversity to survive illnesses and weaknesses. A fungus infestation is close to eradicating the current domestic banana. 
@@ -18,11 +20,11 @@ In a similar way, computing needs diversity of ideas.
 
 All is not lost. There are still remnants of the experiments from the 80's and 90's and later newcomers. Here are some of the possibilities.
 
-- **Apple** \
+- **Apple**  
 Apple is the longest living example of an alternative to the greige blandness of PC computing. However, in many ways, in order to become more mainstream and grab more business, Macintosh computers have become increasingly more and more similar to the PCs they are competing against.
-- **Linux** \
+- **Linux**  
 On the OS side, Linux, xBSD and other open source operating systems are a great stopgap for increased diversity on the software side. The proof is that the mainstream manufactures have increasingly embraced features from them. Windows now has a Linux subsystem able to run Linux applications and the Mac OS X kernel is built on top of the open source Mach microkernel including a large FreeBSD layer.
-- **SBCs** \
+- **SBCs**  
 Single board computers such as the Raspberry PI come close to the ideal represented by this post. Although more geared towards HW tinkerers, you can buy a custom enclosure and a Raspberry PI 4 and use it as a standalone desktop computer.
 
 ## What's next?
