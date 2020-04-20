@@ -5,6 +5,8 @@ title: Playing around with old ASIC designs
 
 ![GAMECART?](/images/GAMECART.png "Inside the STE GLUE/MMC chip")
 
+<!--break-->
+
 As an old Atari ST owner, I have always been very interested in various retro
 projects involving that old machine. I've spent hours playing around with emulators,
 reading about various clones and reimplementations, and even gotten more or
