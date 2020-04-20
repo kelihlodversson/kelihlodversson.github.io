@@ -7,7 +7,7 @@ The self and the other go-with. They go together. As with Yin and Yang, the dry 
 
 Differences are important. We need to listen to more than just echoes, or watch mirror images of ourselves to stay sane and to be aware of our own identity.
 
-## Differences in computing
+## Diversity in computing
 In the 80's and to some degree the 90's the home computer revolution brought us myriads of computing platforms, each with their own slightly different variations on what home computing should be (or become).
 
 These experiments evolved and non-viable ones died off or got replaced with new species. This could be considered the pre-agrarian period of home computing; there was a great variety to be foraged in the forest of early home computer manufacturers.
