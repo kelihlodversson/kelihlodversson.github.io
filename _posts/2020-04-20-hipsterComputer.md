@@ -10,8 +10,6 @@ Differences are important. We need to listen to more than just echoes, or watch 
 ## Differences in computing
 In the 80's and to some degree the 90's the home computer revolution brought us myriads of computing platforms, each with their own slightly different variations on what home computing should be (or become).
 
-<!–break–>
-
 These experiments evolved and non-viable ones died off or got replaced with new species. This could be considered the pre-agrarian period of home computing; there was a great variety to be foraged in the forest of early home computer manufacturers.
 Then some of the platforms became big and began displacing the small platforms. With the exception of a few outliers, in the effort of outcompeting the others, a monoculture of farmed, beige PCs became the norm.
 In nature, monocultures are vulnerable. We need biodiversity to survive illnesses and weaknesses. A fungus infestation is close to eradicating the current domestic banana. 
