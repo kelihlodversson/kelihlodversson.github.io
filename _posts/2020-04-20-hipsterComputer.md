@@ -1,4 +1,7 @@
-# The case for more choices in desktop computing in 2020.
+---
+layout: post
+title: The case for more choices in desktop computing in 2020.
+---
 
 The self and the other go-with. They go together. As with Yin and Yang, the dry and the wet side of the mountain, one cannot exist without the other.
 
