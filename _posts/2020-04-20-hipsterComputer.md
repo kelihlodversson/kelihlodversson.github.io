@@ -1,14 +1,17 @@
 ---
 layout: post
-title: The case for more choices in desktop computing in 2020.
+title: Diversity in computing
 ---
+
+## The case for more choices in desktop computing in 2020.
 
 The self and the other go-with. They go together. As with Yin and Yang, the dry and the wet side of the mountain, one cannot exist without the other.
 
 Differences are important. We need to listen to more than just echoes, or watch mirror images of ourselves to stay sane and to be aware of our own identity.
 
-## Diversity in computing
 In the 80's and to some degree the 90's the home computer revolution brought us myriads of computing platforms, each with their own slightly different variations on what home computing should be (or become).
+
+<!--break-->
 
 These experiments evolved and non-viable ones died off or got replaced with new species. This could be considered the pre-agrarian period of home computing; there was a great variety to be foraged in the forest of early home computer manufacturers.
 Then some of the platforms became big and began displacing the small platforms. With the exception of a few outliers, in the effort of outcompeting the others, a monoculture of farmed, beige PCs became the norm.
