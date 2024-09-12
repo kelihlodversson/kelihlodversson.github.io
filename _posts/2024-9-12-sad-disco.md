@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Diversity in computing
+title: The Unexpected Journey of Sad Disco
 ---
 
 
----
-layout: post
-title: The Unexpected Journey of Sad Disco: From Film Competition to Global Recognition
----
+# The Unexpected Journey of Sad Disco: 
+
+## From Film Competition to Global Recognition
+
 
 
 *What started as an entry in a music competition for the Danish film *Pusher II* became a track with a life of its own. From its cinematic debut to a haunting cover by Mark Lanegan and a prominent feature in the French film *Shéhérazade*, composer Keli Hlodversson reflects on the unexpected journey of *Sad Disco*—and how a suspicious email led to a surprising collaboration.*
