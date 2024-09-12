@@ -1,4 +1,13 @@
+---
+layout: post
+title: The Unexpected Journey of Sad Disco: From Film Competition to Global Recognition
+---
 
+![RESPECT](/images/respect.png)
+
+What started as an entry in a music competition for the Danish film *Pusher II* became a track with a life of its own. From its cinematic debut to a haunting cover by Mark Lanegan and a prominent feature in the French film *Shéhérazade*, composer Keli Hlodversson reflects on the unexpected journey of *Sad Disco*—and how a suspicious email led to a surprising collaboration.*
+
+<!--break-->
 
 When I first composed Sad Disco, it wasn’t even supposed to make it onto the soundtrack of Pusher II. In fact, it started as a submission for a competition to find incidental music for the film. I entered it without thinking much of it, but to my surprise, Nicolas Winding Refn and his music director liked it so much that they decided to feature it more prominently in the actual soundtrack. That was the first time I realized this track might have a life beyond what I initially imagined. One review from CineVue even described it as “a haunting, hypnotic backdrop to the film’s darker themes,” which made me feel like the music had done its job.
 
