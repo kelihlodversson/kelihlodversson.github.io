@@ -4,8 +4,6 @@ title: The Unexpected Journey of Sad Disco
 ---
 
 
-# The Unexpected Journey of Sad Disco: 
-
 ## From Film Competition to Global Recognition
 
 
