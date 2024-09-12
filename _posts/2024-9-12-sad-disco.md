@@ -8,7 +8,7 @@ title: The Unexpected Journey of Sad Disco
 
 
 
-What started as an entry in a music competition for the Danish film *Pusher II* became a track with a life of its own. From its cinematic debut to a haunting cover by Mark Lanegan and a prominent feature in the French film. In this article, I'll reflect on the unexpected journey of *Sad Disco*—and how a suspicious email led to a surprising collaboration.
+What started as an entry in a music competition for the Danish film *Pusher II* became a track with a life of its own. In this article, I'll reflect on the unexpected journey of *Sad Disco*—and how a suspicious email led to a surprising collaboration.
 
 <!--break-->
 
