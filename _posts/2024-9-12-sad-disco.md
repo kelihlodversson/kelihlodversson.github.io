@@ -1,5 +1,11 @@
 ---
 layout: post
+title: Diversity in computing
+---
+
+
+---
+layout: post
 title: The Unexpected Journey of Sad Disco: From Film Competition to Global Recognition
 ---
 
