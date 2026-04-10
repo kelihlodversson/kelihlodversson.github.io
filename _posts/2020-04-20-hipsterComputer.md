@@ -1,48 +1,87 @@
 ---
 layout: post
-title: Diversity in computing
+title: We Need a Hipster Computer
 ---
 
-## The case for more choices in desktop computing in 2020.
+## The case for more choices in desktop computing.
 
-The self and the other go-with. They go together. As with Yin and Yang, the dry and the wet side of the mountain, one cannot exist without the other.
+Differences matter. Not just in the abstract, philosophical sense — as with Yin
+and Yang, the dry and wet sides of the mountain — but practically. We need to
+hear more than echoes of ourselves to stay sane, to know where we end and the
+world begins.
 
-Differences are important. We need to listen to more than just echoes, or watch mirror images of ourselves to stay sane and to be aware of our own identity.
-
-In the 80's and to some degree the 90's the home computer revolution brought us myriads of computing platforms, each with their own slightly different variations on what home computing should be (or become).
+Computing forgot this somewhere along the way.
 
 <!--break-->
 
-These experiments evolved and non-viable ones died off or got replaced with new species. This could be considered the pre-agrarian period of home computing; there was a great variety to be foraged in the forest of early home computer manufacturers.
-Then some of the platforms became big and began displacing the small platforms. With the exception of a few outliers, in the effort of outcompeting the others, a monoculture of farmed, beige PCs became the norm.
-In nature, monocultures are vulnerable. We need biodiversity to survive illnesses and weaknesses. A fungus infestation is close to eradicating the current domestic banana. 
-In a similar way, computing needs diversity of ideas.
+In the 80s, and to some degree the 90s, the home computer revolution was a
+genuine experiment. Dozens of platforms competed, each with its own vision of
+what personal computing should feel like — the Atari ST, the Commodore Amiga,
+the Acorn Archimedes, the MSX, the Sinclair Spectrum. You could argue about
+them. They were genuinely different from each other in ways that mattered.
 
-## Existing diversity
+This was the pre-agrarian period of home computing. There was real variety to
+be foraged in the forest of early manufacturers. Then a few platforms got big,
+displaced the others, and the monoculture arrived: the beige PC, endlessly
+cloned, endlessly iterated, quietly colonising everything.
 
-All is not lost. There are still remnants of the experiments from the 80's and 90's and later newcomers. Here are some of the possibilities.
+In nature, monocultures are fragile. A single fungus is currently on the verge
+of eradicating the domestic banana — the Cavendish variety that replaced the
+richer-tasting Gros Michel after *that* blight in the 1950s. We optimised for
+scale and lost diversity. Computing did the same thing.
 
-- **Apple**  
-Apple is the longest living example of an alternative to the greige blandness of PC computing. However, in many ways, in order to become more mainstream and grab more business, Macintosh computers have become increasingly more and more similar to the PCs they are competing against.
-- **Linux**  
-On the OS side, Linux, xBSD and other open source operating systems are a great stopgap for increased diversity on the software side. The proof is that the mainstream manufactures have increasingly embraced features from them. Windows now has a Linux subsystem able to run Linux applications and the Mac OS X kernel is built on top of the open source Mach microkernel including a large FreeBSD layer.
-- **SBCs**  
-Single board computers such as the Raspberry PI come close to the ideal represented by this post. Although more geared towards HW tinkerers, you can buy a custom enclosure and a Raspberry PI 4 and use it as a standalone desktop computer.
+## What's left
 
-## What's next?
+Not everything is lost. There are still outliers worth acknowledging.
 
-So given these options. What is missing? More choice is always preferable, but the author would also like a turn-key solution. An alternative desktop hardware solution with its own desktop OS. The PCs are the distant descendants of the Intel 8088 powered IBM PC, and the Mac Pro has lineage all the way back to the venerable Mac (although it now mostly traces it OS lineage from the NeXT and hardware to a big extent the Intel PCs.)
+Apple remains the longest-lived alternative to the beige consensus — but the
+gap has narrowed. In the pursuit of mainstream market share, the Mac has
+gradually come to resemble the thing it once defined itself against. The
+hardware is beautiful. The thinking is increasingly familiar.
 
-What if we lived in an alternate reality where systems such as the Atari ST, Commodore Amiga, and even the Acorn RISC PC, survived to the modern day. (One could argue that the RISC PC with its ARM processor gave way to the multitude of mobile phones running on modern ARM processors.) 
+Linux, the BSDs, and other open-source operating systems provide real diversity
+at the software layer, and their influence has spread further than their user
+numbers suggest: Windows now runs a Linux subsystem, and macOS has been built
+on a Mach/FreeBSD foundation since the NeXT acquisition. The mainstream
+absorbed their ideas while the platforms themselves stayed niche.
 
-For the ST, once a popular computer with musicians, how would its 2020 descendant look like? 
+Single-board computers like the Raspberry Pi come closest to the spirit of what
+this post is really about. Cheap, open, genuinely hackable — you can buy a Pi 4,
+add an enclosure and a keyboard, and have a functioning desktop that works
+nothing like a PC. It's more geared toward tinkerers than turn-key users, but
+the instinct is right.
 
-How would such a machine look like? Should we go back to the combined computer/keyboard wedge shape? Or should one allow the users to select their own keyboard and mice? Are the MIDI ports still there, or is USB now a sufficient replacement? Could TOS and GEM be updated to modern demands or will it be running one of the free Unix OSes now available?
+## The gap
 
-Let's come up with the 4th alternative computing system. Forget about compatibility with other systems. We want it to be a whole different ecosystem. It will not be mainstream, it may not have a well-defined niche, but at least we will have an option to dream different again.
+What's still missing is a complete alternative. Not an OS running on PC
+hardware, not a Linux distro with a custom skin — but a different machine with
+a different lineage and a different way of thinking about what a desktop
+computer is.
 
-## Or in other words
-The alternatives have become too mainstream. We need that hipster computer platform to feel special again. ;)
+The PC is a distant descendant of the Intel 8088-powered IBM PC from 1981. The
+Mac traces its OS back to NeXT and its hardware, increasingly, back to the same
+Intel and now ARM supply chain everyone else uses. The family trees have merged.
 
+What if the Atari ST, the Commodore Amiga, or the Acorn RISC PC had survived?
+(The RISC PC argument is almost unfair — its ARM processor did survive, just
+redistributed across a billion mobile phones rather than preserved in a single
+lineage.) The ST was once the machine of choice for musicians. The Amiga had
+video capabilities years ahead of anything else. The Archimedes had an
+architecture that, had things gone differently, might have shaped desktop
+computing the way it shaped everything else.
 
+For the ST specifically: what would a 2025 descendant look like? Would it keep
+the wedge-shaped keyboard-computer form factor, or adopt modern modularity?
+Are the MIDI ports still there, or has USB absorbed that function? Could TOS
+and GEM be evolved into something that meets modern expectations, or would it
+run a stripped-down Unix with the old design language preserved on top?
 
+I don't have the answers. But I think the questions are worth asking, because
+the exercise itself is useful. Designing a 4th alternative — something with no
+obligation to be compatible with the existing ecosystem, no pressure to be
+mainstream, no well-defined niche to fit into — is how you rediscover what
+choices actually look like.
+
+We don't need it to win. We just need it to exist, and to be genuinely
+different. We need that hipster computer, if only to remember that the way
+things are is not the only way they could have been.
