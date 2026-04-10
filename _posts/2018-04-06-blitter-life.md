@@ -1,21 +1,23 @@
 ---
 layout: post
 image: /images/blitlife.png
-title: Conway's game of life on the BLiTTER
+title: Conway's Game of Life on the BLiTTER
 ---
 
 ![Gosper Glider Gun](/images/life_in_a_window.png "Gosper Glider Gun running in a GEM window"){: .float}
-Since I've got an Atari Mega 4, I've been reading up on the Atari ST Blitter and
-what to do with it. Apart from being excellent at copying bitmaps around, it
-does have a few cool tricks up its sleeve.
+The Atari ST's BLiTTER chip was designed for one thing: moving rectangles of
+pixels around as fast as possible. It's not a processor. It can't branch. It
+has no ALU. And yet, buried inside it is a smudge mode that turns its halftone
+pattern registers into a 16-entry lookup table — which means, if you're
+creative enough with your data layout, you can coax it into doing arithmetic.
+
+Which raises an obvious question: could you run Conway's Game of Life on it?
 
 <!--break-->
 
 Inspired by [Paranoid's BLiTTER FAQ](http://paradox.atari.org/files/BLIT_FAQ.TXT),
-I learned that you can do cool things with the halftone pattern registers and the
-smudge mode of the blitter.
-Enabling smudge mode basically turns the halftone pattern into a 16 entry
-lookup table. Paranoid uses that to implement saturated increments and chunky
+I learned that enabling smudge mode turns the halftone pattern into a 16-entry
+lookup table. Paranoid uses this to implement saturated increments and chunky
 to planar conversions (albeit slightly slower than the fastest m68k solution
 using movep instructions, it could still be useful in some cases.)
 
@@ -23,8 +25,9 @@ using movep instructions, it could still be useful in some cases.)
 the Blitter works. I recommend taking a look at Paranoid's FAQ and [Atari's official
 docs](https://www.dev-docs.org/docs/htm/search.php?find=Atari%20ST%20Bit-Block) if you need a brush-up.*
 
-Lookup tables means we can approximate some (very rudimentary) calculations.
-Could something like Game of Life be implemented using the BLiTTER?
+Lookup tables mean we can approximate some rudimentary calculations. Game of
+Life needs to count neighbours and apply a simple rule table — could that be
+enough?
 
 The rules are simple. The [Wikipedia article on Conway's Game of Life](https://en.wikipedia.org/wiki/Conway's_Game_of_Life) describes them as thus:
 
@@ -35,32 +38,26 @@ The rules are simple. The [Wikipedia article on Conway's Game of Life](https://e
 > 1. Any live cell with more than three live neighbours dies, as if by overpopulation.
 > 1. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
 
+The BLiTTER can't count pixels directly — but let's see how close we can get.
 
+Assuming the initial pattern is stored in a monochrome bitmap, my first sketch
+of an algorithm looked like this:
 
-Now how do we implement this on the Blitter? The Blitter can't count pixels, or does it?
+1. Expand the bitmap, copying each pixel to one word per pixel. (A reverse chunky-to-planar conversion.)
+2. While we're at it, include info on the pixel to the left and right.
+3. Merge in the six pixels from the rows above and below.
+4. Loop through the extracted pixels a few times, using smudge mode and halftone patterns to convert neighbour data into a count.
+5. On the last pass, combine the current pixel with the count and the rules to determine the next state.
+6. Convert the wide pixels back to the original bitmap.
+7. profit!
 
-Let's assume that the initial pattern is stored in a monochrome bitmap.
-Initially, the steps
-I had in mind to generate the next generation constist roughly of these:
+Here's what I ran into: there are 9 pixels surrounding each pixel, but the
+halftone registers can only map 4 pixels at a time. And the final count has to
+fit into 4 bits alongside the pixel itself for the decision table. Representing
+0–9 needs 4 bits — but luckily we only need to count to 4, since anything
+higher produces the same result.
 
-1. Munge the initial bitmap, copying each pixel to one word per pixel in the original bitmap. (A sort of a reverse chunky to planar conversion.)
-2. While we're at it, include info on the pixel to the left and the right of the pixel.
-2. Merge into the data, the six pixels above and below the current pixel.
-3. Loop through the extracted pixels a few times, use the smudge mode and
-halftone patterns to convert the surrounding pixel data into a count of pixels
-4. Last run through the smudge would combine the current pixel with the pixel counts
-and the rules of the game to determine whether to write or clear the pixel.
-5. Convert these wide pixels back to the original bitmap.
-6. profit!
-
-Here's what I ran into: There are in total 9 pixels surrounding each pixel,
-if I wanted to count them using the halftone registers as a lookup table, I
-can only map 4 pixels at a time. Then, the final count has to fit into 4 bits
-together with the actual pixel so I can build the decision table. Representing a
-number from 0 through 9 requires 4 bits, but luckily, we only need to count to 4,
-as anything higher than 4 has the same result.
-
-I revised my algorithm and describe it in some details below.
+I revised the algorithm accordingly. The details follow.
 
 ## 1. Count surrounding rows first
 
@@ -137,7 +134,7 @@ control where I want to place the results. Using this map, I perform two passes
 with the temporary buffer both as the source and destination. (Two passes, as
 I store information about two pixels in each word.)
 
-## 3. patch in information about the current row
+## 3. Patch in information about the current row
 
 Let's assume that each byte in the buffer now contains the sum calculated above
 shifted left by two bits:
@@ -165,7 +162,7 @@ pixels from the current row) at a time.
 Now to add the left and right pixels. We stored that count adjacent to our 3-bit sum,
 so we can use the same trick as when summing up the upper and lower rows.
 
-But isn't there is a problem here? We now need to add together a 3-bit and a 2-bit
+But isn't there a problem here? We now need to add together a 3-bit and a 2-bit
 number, and that's 1 bit too many to handle in a single pass. I figured out that
 if I only add up the lowest two bits of the initial sum and don't overwrite the
 third bit, everything will work as before:
@@ -223,7 +220,7 @@ blitter algorithm. It hard codes three images and opens each in their own window
 Closing all windows will exit the application. If you want to experiment with other
 patterns, you will have to modify them in the source and recompile the application.
 Also note that you need an ST with a blitter chip. The code does not test for it and
-will most probably bomb out if you try to run on a machin without... It may even bomb
+will most probably bomb out if you try to run on a machine without... It may even bomb
 on a machine with one. ;)
 
 ## Downloads:
